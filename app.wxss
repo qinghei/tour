@@ -1,0 +1,46 @@
+/**app.wxss**/
+/*功能一：通用箭头样式*/
+.arrow{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx 50rpx;
+  font-size:14px;
+}
+.arrow::after{
+  content: "";
+  width:15rpx;
+  height:15rpx;
+  border-top: 3rpx solid #ccc;
+  border-right: 3rpx solid #ccc;
+  transform: rotate(45deg);
+}
+/*功能二：通用分割块*/
+.divider{
+  margin-top:20rpx;
+  background: #f1f1f1;
+  height:20rpx;
+}
+/*功能三：通用项目条*/
+.cell{
+  background: #fff;
+  font-size: 16px;
+}
+.cell-item{
+  border-bottom: 1rpx solid #ddd;
+  padding:20rpx 30rpx;
+}
+/*浅灰色方框*/
+.hot{
+  width:160rpx;
+  height:80rpx;
+  background: #dfd3e2af;
+  color:rgba(63, 63, 182, 0.445);
+  font-size:12px;
+  border-radius:10rpx;
+  text-align: center;
+  line-height: 80rpx;
+}
+.contain{
+  padding:20rpx;
+}
