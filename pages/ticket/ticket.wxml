@@ -1,0 +1,10 @@
+<!--pages/ticket/ticket.wxml-->
+<view class="list" wx:for="{{ticket}}" wx:key="item.id">
+  <image src="{{'http://127.0.0.1:3001/'+item.img}}" lazy-load mode="aspectFill"></image>
+  <view class="mask"><text>{{item.adress}}</text></view>
+  <view class="desc"> 
+    <text class="title">{{item.title}}</text>
+    <view class="dang"><text>当天入园</text></view>
+    <view class="price">￥{{item.price}}</view> 
+  </view>
+</view>
