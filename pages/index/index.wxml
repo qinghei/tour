@@ -1,0 +1,42 @@
+<!--index.wxml-->
+<!--轮播图-->
+<view class="slider">
+  <swiper autoplay interval="3000" indicator-dots=''>
+    <swiper-item wx:for="{{list}}" wx:key="item.id">
+      <image src="{{item.img_url}}" lazy-load mode="aspectFill"></image>
+    </swiper-item>
+  </swiper>
+</view>
+<!--搜索框-->
+<view class="search">
+  <input placeholder='输入关键字开始搜索'></input>
+</view>
+<!--九宫格-->
+<view class="index-nav">
+  <view class="nav-item"  wx:for="{{nav}}" wx:key="item.id">
+    <image src="{{item.img}}" mode="aspectFill" lazy-load bindtap='handleJumpPage' data-id="{{item.id}}"></image>
+    <text>{{item.title}}</text>
+  </view>
+</view>
+<view class="divider"></view>
+<!--目的地-->
+<view><text class="arrow">热门目的地</text></view>
+<view class="list">
+  <view class="kuang" wx:for="{{hot}}" wx:key="item.id">
+    <view class="hot" >{{item.cname}}</view>
+  </view>
+</view>
+<view class="divider"></view>
+<!--优选旅程-->
+<view class="select">优选旅程</view>
+<view class="list">
+  <view class="wrap" wx:for="{{you}}" wx:key="item.id">
+    <image src=" {{'http://127.0.0.1:3001/'+item.img_url}}" lazy-load mode="aspectFill"></image>
+    <text class="mask">—{{item.yname}}—</text>
+    <view class="text">
+      <text class="title">{{item.title}}</text>
+      <text class="classify">{{item.classify}}</text>
+    </view>
+  </view>
+</view>
+<view class="divider"></view>
