@@ -1,0 +1,83 @@
+/* pages/reserve/reserve.wxss */
+.title{
+  font-size: 15px;
+}
+.unit{
+  margin:20rpx 0;
+  color:#aaa;
+  font-size: 12px;
+}
+.price{
+  color:orange;
+  font-size: 17px;
+}
+/*预订信息*/
+.info{
+  font-size:15px;
+  color:#000;
+}
+.num{
+  margin:25rpx;
+}
+.cell{
+  font-size:13px;
+  color:#aaa;
+}
+.numberbox {
+  margin:-40rpx 0 auto auto;
+  width:80px;
+  height:26px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+.numberbox text {
+float: left;
+width: 26px;
+line-height: 26px;
+text-align: center;
+}
+/*数值*/
+.numberbox input {
+width: 25px;
+height: 26px;
+float: left;
+margin: 0 auto;
+text-align: center;
+font-size: 12px;
+border-left: 1px solid #ccc;
+border-right: 1px solid #ccc;
+}
+/*普通样式*/
+.numberbox .normal {
+color:black;
+}
+/*禁用样式*/
+.numberbox .disable {
+color: #ccc;
+}
+/*出行人*/
+
+.person input{
+  display: inline-block;
+  margin-left:30rpx;
+  font-size: 12px;
+  margin-bottom:-18rpx;
+}
+/*订单栏*/
+.tip{
+  font-size: 15px;
+  margin-top:15rpx;
+  padding-left:30rpx;
+}
+.tip text{
+  margin:0 15rpx auto 20rpx;
+  color:orange;
+}
+.tip button{
+  margin-right:0;
+  background: red;
+  color:#fff;
+  width:25%;
+  font-size: 12px;
+ 
+}

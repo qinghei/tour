@@ -1,0 +1,27 @@
+<!--pages/reserve/reserve.wxml-->
+<view class="contain">
+  <view class="title">歌诗达邮轮维多利亚号 广州出发 越南芽庄+岘港 6日5晚跟团游</view>
+  <view class="unit"><text class="price">￥4888</text> 元/人</view>
+  <view class="divider"></view>
+  <view class="cell">
+    <view class="cell-item info">预定信息</view>
+    <view class="cell-item">出行日期</view>
+    <view class="num">入住人数
+      <view class='numberbox sum'>
+        <text class='{{state}}' type='number' bindtap='incream'>-</text>
+        <input bindinput='num' value='{{num}}'></input>
+        <text bindtap='add'>+</text>
+      </view>
+    </view>
+  </view>
+  <view class="divider"></view>
+  <view class="cell person">
+    <view class="cell-item info">出行人</view>
+    <view class="cell-item">联系人 <input></input></view>
+    <view class="num">电话<input></input></view>
+  </view>
+  <view class="divider"></view>
+  <view class="tip">订单总额:<text>￥4888</text>元
+    <button bindtap='pay'>提交订单</button>
+  </view>
+</view>
