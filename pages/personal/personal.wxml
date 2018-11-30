@@ -1,0 +1,17 @@
+<!--pages/personal/personal.wxml-->
+<view class="avatar">
+  <view class="edit"><text bindtap="edit">编辑</text></view>
+  <view class="info">
+    <view class="head-img"><image src="{{userInfo.avatarUrl}}"></image></view>
+    <view class="uname"><text>{{userInfo.uname}}</text></view>
+    <text class="tel">{{userInfo.tel}}</text>
+  </view>
+</view>
+<view class="detail">
+  <view class="ordernum">订单编号：45121534964867<text>待付款</text></view>
+  <image src="http://127.0.0.1:3001/img/liner/1.jpg" lazy-load mode="aspectFill"></image>
+  <text class="title">歌诗达邮轮维多利亚号 广州出发 越南芽庄+岘港 6日5晚跟团游</text>
+  <view class="pay">
+    <button>去支付</button>
+  </view>
+</view>

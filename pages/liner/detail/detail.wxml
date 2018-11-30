@@ -1,0 +1,66 @@
+<!--pages/liner/detail/detail.wxml-->
+<view>
+<image src="{{!list[0].img?'':'http://127.0.0.1:3001/img/'+list[0].img}}" lazy-load mode="aspectFill"></image>
+<view class="detail">
+  <view class="title">{{list[0].title}}</view>
+  <view class="dest">
+    <text>{{list[0].adress}}，{{list[0].routing}}</text>
+    <text>{{list[0].ltype}}</text>  
+  </view>
+  <view class="price">￥{{list[0].price1}}-{{list[0].price2}}</view>
+  <view class="share">
+    <image src="http://127.0.0.1:3001/img/liner/share.png" lazy-load mode="aspectFill"></image>
+    <view>分享</view>
+  </view>
+  <view class="classify">
+      <text>{{list[0].classify1}}</text>
+      <text>{{list[0].classify2}}</text>
+      <text>{{list[0].classify3}}</text>
+  </view>
+  <view class="divider"></view>
+  <view class="choose">
+    <image src="http://127.0.0.1:3001/img/liner/chuan.jpg" lazy-load mode="aspectFill"></image><text>舱房选择</text>
+    <view class="inner">
+      <text class="name">内舱房(无窗)</text>
+      <text class="price1">￥{{list[0].price1}}</text>
+      <button bindtap='book' data-id="1">预定</button>
+    </view>
+    <view class="outer">
+      <text class="name">海景房(有窗)</text>
+      <text class="price1">￥{{list[0].price2}}</text>
+      <button bindtap='book'data-id="2">预定</button>
+    </view>
+  </view>
+  <view class="divider"></view>
+  <view class="desc">
+    <view class="pic">图文介绍</view>
+    <image src="http://127.0.0.1:3001/img/liner/adv.jpg" lazy-load mode="aspectFill"></image>
+  </view>
+  <view class="divider"></view>
+  <view class="traffic">
+    <image src="http://127.0.0.1:3001/img/liner/bus.jpg" lazy-load mode="aspectFill"></image>
+    <text>交通信息</text>
+    <view class="moren">默认交通</view>
+    <view class="xiang">
+      <view class="go">
+        <text class="text">去</text>
+        <image src="http://127.0.0.1:3001/img/liner/huo.jpg" lazy-load mode="aspectFill"></image>
+        <view class="time">
+          <text>待定</text> 
+          <view class="heng"><text>待定</text><text>></text></view>
+          <text>待定</text> 
+        </view> 
+      </view>
+      <view class="back">
+        <text class="text">返</text>
+        <image src="http://127.0.0.1:3001/img/liner/huo.jpg" lazy-load mode="aspectFill"></image>
+        <view class="time">
+          <text>待定</text> 
+          <view class="heng"><text>待定</text><text>></text></view>
+          <text>待定</text> 
+        </view> 
+      </view>
+    </view>
+  </view>
+</view>
+</view>

@@ -1,0 +1,27 @@
+<!--pages/liner/detail/reserve/orderdetail/orderdetail.wxml-->
+<view class="contain">
+  <view class="title">{{list[0].title}}</view>
+  <view class="divider"></view>
+  <view class="routing"> 
+    <view class="type">{{list[0].ltype}}</view>
+    <view class="detail">
+      <text>{{list[0].adress}}上船</text>
+      <image src="http://127.0.0.1:3001/img/liner/chuan1.jpg" lazy-load mode="aspectFill"></image>
+      <text>返回{{list[0].adress}}</text>
+    </view>
+  </view>
+  <view class="cell">
+    <view class="cell-item info">订单信息</view>
+    <view class="cell-item">订单编号 <text>C2018112616353745</text> </view>
+    <view class="cell-item">入住人数 <text>{{num}}</text> </view>
+    <view class="cell-item">出行日期 <text>{{time}}</text> </view>
+  </view>
+  <view class="divider"></view>
+   <view class="cell person">
+    <view class="cell-item info">出行人</view>
+    <view class="cell-item">联系人 <text>{{info}}</text></view>
+    <view class="num">电话<text>{{info2}}</text></view>
+  </view>
+  <view class="divider"></view>
+  <view class="tip">订单总额:<text>{{total}}</text>元<button bindtap='submit'>在线支付</button></view>
+</view>

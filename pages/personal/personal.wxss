@@ -1,0 +1,71 @@
+/* pages/personal/personal.wxss */
+page{background: #eee}
+.avatar{
+  width: 100%;
+  height: 416rpx;
+  background: #d9d3c6;
+}
+.avatar .edit {
+  height: 78rpx;
+  overflow: hidden;
+}
+.avatar .edit text {
+  font-size: 13px;
+  color: #948475;
+  font-weight: bold;
+  float: right;
+  margin-right: 24rpx;
+  margin-top: 36rpx;
+}
+.head-img{
+  height:186rpx;
+  width:186rpx;
+  background:#fff;
+  padding:10rpx;
+  box-sizing:border-box;
+  border-radius:50%;
+  margin:0 auto;
+}
+.head-img image{
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+/*订单*/
+.detail{
+  padding:20rpx;
+  background: #fff;
+  height:auto;
+  position: relative;
+}
+.ordernum{
+  font-size: 12px;
+  color:#aaa;
+}
+.ordernum text{
+  color:green;
+  padding-left:315rpx
+}
+.detail image{
+  height:110rpx;
+  width:110rpx;
+  border-radius: 20rpx;
+  margin-top:20rpx;
+  
+}
+.title{
+  position: absolute;
+  font-size: 14px;
+  padding:0 20rpx;
+  margin-top:40rpx;
+}
+.pay{
+  text-align: center;
+  border-top:1rpx solid #ddd;
+  margin-top:20rpx;
+}
+.pay button{
+  width:25%;
+  margin-top:20rpx;
+  font-size: 13px;
+}

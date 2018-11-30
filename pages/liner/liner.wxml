@@ -1,0 +1,48 @@
+<!--pages/liner/liner.wxml-->
+<!--导航栏-->
+<view class="choose">
+  <view data-id="0" bindtap="navbarTap" class="block {{ currentTab==0 ? 'active' : ''}}">
+    <text bindtap="show"> 出发日期</text>
+    <text class="sj"></text>
+  </view>
+  <view data-id="1" bindtap="navbarTap" class="block {{ currentTab== 1 ? 'active' : ''}}">
+    <text>游轮名称</text>
+    <text class="sj"></text>
+  </view>
+  <view data-id="2" bindtap="navbarTap" class="block {{ currentTab==2 ? 'active' : ''}}">
+    <text>筛选</text>
+    <text class="sj"></text>
+  </view>  
+</view>
+<view wx:if="{{currentTab==0}}" class="fl_content">
+   <view class="f1" wx:for="{{content[0]}}" wx:key="item.id">
+       <text class="text" >{{item}}</text>
+   </view>
+</view>
+<view class="fl_content"  wx:elif="{{currentTab==1}}">
+   <view class="f1" wx:for="{{content[1]}}" wx:key="item.id">
+      <text class="text">{{item}}</text>
+   </view>
+</view>
+<view  class="fl_content" wx:elif="{{currentTab==2}}">
+   <view class="f1" wx:for="{{content[2]}}" wx:key="item.id">
+      <text class="text">{{item}}</text>
+   </view>
+</view>
+<!--产品内容-->
+<view class="list" wx:for="{{liner}}" wx:key="item.id" bindtap='jumpDetail' data-id="{{item.id}}">
+  <image src="{{'http://127.0.0.1:3001/img/'+item.img}}" lazy-load mode="aspectFill"></image>
+  <view class="mask"><text>{{item.adress}}出发</text></view>
+  <view class="desc"> 
+    <text class="title">{{item.title}}</text>
+    <text class="type">{{item.ltype}}</text>
+    <view><text class="type">{{item.destination}}|{{item.routing}}</text></view>
+    <view class="classify">
+      <view class="dang"><text>{{item.classify1}}</text></view>
+    <view class="dang"><text>{{item.classify2}}</text></view>
+    <view class="dang"><text>{{item.classify3}}</text></view>
+    </view>
+    
+    <view class="price">￥{{item.price1}}</view> 
+  </view>
+</view>
